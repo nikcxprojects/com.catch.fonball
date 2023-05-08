@@ -6,18 +6,12 @@ using Random = UnityEngine.Random;
 
 public class Enemy : MonoBehaviour
 {
-    private readonly int Walking = Animator.StringToHash("IsWalking");
-    private readonly int Jump = Animator.StringToHash("IsJumping");
-
-
-    private Animator Animator { get; set; }
     private Rigidbody2D Rigidbody { get; set; }
 
     public static Action<bool> OnBallGaught { get; set; }
 
     private void Awake()
     {
-        Animator = GetComponent<Animator>();
         Rigidbody = GetComponent<Rigidbody2D>();
     }
 
@@ -40,9 +34,6 @@ public class Enemy : MonoBehaviour
     {
         StopCoroutine(nameof(Movement));
 
-        Animator.SetBool(Walking, false);
-        Animator.SetBool(Jump, true);
-
         Invoke(nameof(ResetMe), 1.5f);
     }
 
@@ -50,8 +41,6 @@ public class Enemy : MonoBehaviour
     {
         while(true)
         {
-            Animator.SetBool(Jump, false);
-            Animator.SetBool(Walking, false);
             yield return new WaitForSeconds(0.6f);
 
             float x = Random.Range(-1.0f, 1.0f);
@@ -60,7 +49,6 @@ public class Enemy : MonoBehaviour
             Vector2 target = new Vector2(x, y);
             while(Rigidbody.position != target)
             {
-                Animator.SetBool(Walking, true);
                 Vector2 _position = Vector2.MoveTowards(Rigidbody.position, target, 3.0f * Time.deltaTime);
                 Rigidbody.MovePosition(_position);
          

@@ -10,6 +10,9 @@ public class UIManager : MonoBehaviour
 
     private GameObject _gameRef;
 
+    [SerializeField] GameObject menuLandscape;
+
+    [Space(10)]
     [SerializeField] GameObject menu;
     [SerializeField] GameObject settings;
     [SerializeField] GameObject records;
@@ -40,8 +43,10 @@ public class UIManager : MonoBehaviour
 
     public void StartGame()
     {
+        menuLandscape.SetActive(false);
+
         var _parent = GameObject.Find("Environment").transform;
-        var _prefab = Resources.Load<GameObject>("PenaltyGame");
+        var _prefab = Resources.Load<GameObject>("level");
 
         _gameRef = Instantiate(_prefab, _parent);
 
@@ -67,6 +72,8 @@ public class UIManager : MonoBehaviour
         {
             Destroy(_gameRef);
         }
+
+        menuLandscape.SetActive(true);
 
         game.SetActive(false);
         settings.SetActive(false);

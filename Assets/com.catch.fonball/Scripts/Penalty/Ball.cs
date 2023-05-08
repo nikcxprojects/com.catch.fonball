@@ -6,8 +6,8 @@ public class Ball : MonoBehaviour
 {
     private bool IsFirstContact { get; set; }
     private bool IsGoal { get; set; }
-    private Vector2 InitScale { get; set; } = Vector3.one;
-    private Vector2 TargetScale { get; set; } = Vector3.one * 0.4176936f;
+    private Vector2 InitScale { get; set; } = Vector3.one * 0.26165f;
+    private Vector2 TargetScale { get; set; } = Vector3.one * 0.1f;
 
     private Transform Center { get; set; }
 
