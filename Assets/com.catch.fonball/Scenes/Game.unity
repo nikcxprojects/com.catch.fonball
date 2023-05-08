@@ -400,7 +400,7 @@ GameObject:
   - component: {fileID: 348363411}
   - component: {fileID: 348363412}
   m_Layer: 0
-  m_Name: landscape sound
+  m_Name: sound/music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1078,16 +1078,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 718537744}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.41418114, y: 0.41418114, z: 0.41418114}
   m_Children: []
   m_Father: {fileID: 1369043448}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -10.200012, y: -10.600098}
+  m_AnchoredPosition: {x: -61.6, y: -13}
   m_SizeDelta: {x: 122, y: 122}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &718537746
@@ -1199,7 +1199,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &720386378
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1997,6 +1997,7 @@ GameObject:
   - component: {fileID: 1320606959}
   - component: {fileID: 1320606958}
   - component: {fileID: 1320606957}
+  - component: {fileID: 1320606960}
   m_Layer: 0
   m_Name: option
   m_TagString: Untagged
@@ -2107,6 +2108,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1320606955}
   m_CullTransparentMesh: 1
+--- !u!114 &1320606960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320606955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78e8bba41b24ddd4889d8d4c4c202a47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enable: {fileID: 21300000, guid: 403d96a98fc39b64fb2bd41af284169c, type: 3}
+  disable: {fileID: 21300000, guid: 599f6f0adfe4aa844a0150ca1a230b32, type: 3}
 --- !u!1 &1367198783
 GameObject:
   m_ObjectHideFlags: 0
@@ -2192,6 +2207,7 @@ GameObject:
   - component: {fileID: 1392775849}
   - component: {fileID: 1392775848}
   - component: {fileID: 1392775847}
+  - component: {fileID: 1392775850}
   m_Layer: 0
   m_Name: option (2)
   m_TagString: Untagged
@@ -2302,6 +2318,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1392775845}
   m_CullTransparentMesh: 1
+--- !u!114 &1392775850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392775845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78e8bba41b24ddd4889d8d4c4c202a47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enable: {fileID: 21300000, guid: 403d96a98fc39b64fb2bd41af284169c, type: 3}
+  disable: {fileID: 21300000, guid: 599f6f0adfe4aa844a0150ca1a230b32, type: 3}
 --- !u!1 &1415307086
 GameObject:
   m_ObjectHideFlags: 0
@@ -3339,7 +3369,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1987417914
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3448,6 +3478,7 @@ GameObject:
   - component: {fileID: 2047117088}
   - component: {fileID: 2047117087}
   - component: {fileID: 2047117086}
+  - component: {fileID: 2047117089}
   m_Layer: 0
   m_Name: option (1)
   m_TagString: Untagged
@@ -3558,6 +3589,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2047117084}
   m_CullTransparentMesh: 1
+--- !u!114 &2047117089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047117084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78e8bba41b24ddd4889d8d4c4c202a47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enable: {fileID: 21300000, guid: 403d96a98fc39b64fb2bd41af284169c, type: 3}
+  disable: {fileID: 21300000, guid: 599f6f0adfe4aa844a0150ca1a230b32, type: 3}
 --- !u!1 &2069146227
 GameObject:
   m_ObjectHideFlags: 0
